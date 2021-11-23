@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [$1 = "build" ]]; then
+    bin/magento setup:upgrade
+    bin/magento setup:di:compile
+    bin/magento cache:clean
+elif [ $1 = "update" ]; then
+    composer update --no-dev --no-scripts
+    sh toolbox build
+fi
+
