@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+    <update handle="2columns-left" />
+    <referenceContainer name="columns">
+        <block class="Lvk\Design\Block\Sidebar\Title"
+               name="lvk_design_block_sidebar_title_main"
+               as="lvk_design_block_sidebar_title_main"
+               template="Lvk_Design::sidebar/title.phtml"
+               before="div.sidebar.main"
+               ifconfig="design/sidebar/title_main">
+            <arguments>
+                <argument name="sidebar_type"
+                          xsi:type="string">main</argument>
+            </arguments>
+        </block>
+        <block class="Lvk\Design\Block\Sidebar\Title"
+               name="lvk_design_block_sidebar_title_additional"
+               as="lvk_design_block_sidebar_title_additional"
+               template="Lvk_Design::sidebar/title.phtml"
+               before="div.sidebar.additional"
+               ifconfig="design/sidebar/title_additional">
+            <arguments>
+                <argument name="sidebar_type"
+                          xsi:type="string">additional</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+</layout>

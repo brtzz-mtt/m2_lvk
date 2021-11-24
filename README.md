@@ -4,7 +4,7 @@ LVK's essentials for Magento 2
 Base components
 ---------------
 
-- base theme: ./app/design/frontend/Lkv/base, extending Magento's blank theme, as parent for further children themes
+- base theme: ./app/design/frontend/Lkv/base, extending Magento's blank theme, as parent for further children
 - backend theme: ./app/design/adminhtml/Lvk/backend, just a minor customization
 - base extensions:
     - base: ./app/code/Lkv/Base, extensions commons and backend basic logic
@@ -23,50 +23,148 @@ Directories structure
 app
 ├── code
 │   └── Lvk
-│       └── Base
+│       ├── Base
+│       │   ├── etc
+│       │   │   └── adminhtml
+│       │   ├── Helper
+│       │   ├── i18n
+│       │   ├── Model
+│       │   │   └── Config
+│       │   │       └── Source
+│       │   ├── Plugin
+│       │   │   └── Magento
+│       │   │       └── Config
+│       │   │           └── Model
+│       │   ├── Rewrite
+│       │   │   ├── Magento
+│       │   │   │   └── Framework
+│       │   │   │       ├── Logger
+│       │   │   │       │   └── Handler
+│       │   │   │       └── Module
+│       │   │   │           └── Plugin
+│       │   │   └── Monolog
+│       │   ├── Test
+│       │   │   └── Unit
+│       │   │       ├── Helper
+│       │   │       ├── Model
+│       │   │       │   └── Config
+│       │   │       │       └── Source
+│       │   │       ├── Plugin
+│       │   │       │   └── Magento
+│       │   │       │       └── Config
+│       │   │       │           └── Model
+│       │   │       └── Rewrite
+│       │   │           └── Magento
+│       │   │               └── Framework
+│       │   │                   ├── Logger
+│       │   │                   │   └── Handler
+│       │   │                   └── Module
+│       │   │                       └── Plugin
+│       │   └── view
+│       │       └── adminhtml
+│       │           ├── layout
+│       │           ├── templates
+│       │           └── web
+│       │               ├── css
+│       │               └── images
+│       ├── Design
+│       │   ├── Block
+│       │   │   ├── Catalog
+│       │   │   │   └── Product
+│       │   │   │       └── ProductList
+│       │   │   └── Sidebar
+│       │   ├── Controller
+│       │   │   ├── Responsivity
+│       │   │   └── Styleguide
+│       │   ├── documentation
+│       │   │   ├── de_DE
+│       │   │   ├── en_EN
+│       │   │   └── it_IT
+│       │   ├── etc
+│       │   │   ├── adminhtml
+│       │   │   └── frontend
+│       │   ├── Helper
+│       │   ├── i18n
+│       │   ├── Model
+│       │   │   ├── Catalog
+│       │   │   ├── Config
+│       │   │   │   └── Body
+│       │   │   │       └── Background
+│       │   │   └── Design
+│       │   │       └── Backend
+│       │   │           └── Body
+│       │   ├── Observer
+│       │   │   ├── Admin
+│       │   │   │   └── System
+│       │   │   │       └── Config
+│       │   │   │           └── Changed
+│       │   │   │               └── Section
+│       │   │   └── Lvk
+│       │   │       └── DeveloperToolBox
+│       │   │           └── Block
+│       │   └── view
+│       │       ├── adminhtml
+│       │       │   ├── layout
+│       │       │   ├── ui_component
+│       │       │   └── web
+│       │       │       ├── css
+│       │       │       ├── images
+│       │       │       │   └── documentation
+│       │       │       ├── js
+│       │       │       │   └── form
+│       │       │       │       └── element
+│       │       │       └── template
+│       │       │           └── form
+│       │       │               └── element
+│       │       └── frontend
+│       │           ├── layout
+│       │           ├── page_layout
+│       │           ├── templates
+│       │           │   ├── catalog
+│       │           │   │   └── product
+│       │           │   │       └── productlist
+│       │           │   │           └── toolbar
+│       │           │   └── sidebar
+│       │           └── web
+│       │               ├── css
+│       │               └── js
+│       └── Mobile
+│           ├── Block
+│           ├── documentation
+│           │   ├── de_DE
+│           │   ├── en_EN
+│           │   └── it_IT
 │           ├── etc
 │           │   └── adminhtml
-│           ├── Helper
 │           ├── i18n
 │           ├── Model
-│           │   └── Config
-│           │       └── Source
-│           ├── Plugin
-│           │   └── Magento
-│           │       └── Config
-│           │           └── Model
-│           ├── Rewrite
-│           │   ├── Magento
-│           │   │   └── Framework
-│           │   │       ├── Logger
-│           │   │       │   └── Handler
-│           │   │       └── Module
-│           │   │           └── Plugin
-│           │   └── Monolog
-│           ├── Test
-│           │   └── Unit
-│           │       ├── Helper
-│           │       ├── Model
-│           │       │   └── Config
-│           │       │       └── Source
-│           │       ├── Plugin
-│           │       │   └── Magento
-│           │       │       └── Config
-│           │       │           └── Model
-│           │       └── Rewrite
-│           │           └── Magento
-│           │               └── Framework
-│           │                   ├── Logger
-│           │                   │   └── Handler
-│           │                   └── Module
-│           │                       └── Plugin
+│           │   └── Admin
+│           │       └── Design
+│           │           └── Config
+│           │               └── Mobile
+│           │                   └── Navigation
+│           ├── Observer
+│           │   └── Lvk
+│           │       └── Design
+│           │           └── Admin
+│           │               └── System
+│           │                   └── Config
+│           │                       └── Changed
+│           │                           └── Section
 │           └── view
-│               └── adminhtml
+│               ├── adminhtml
+│               │   ├── layout
+│               │   ├── ui_component
+│               │   └── web
+│               │       ├── css
+│               │       └── images
+│               │           └── documentation
+│               └── frontend
 │                   ├── layout
 │                   ├── templates
+│                   │   └── html
 │                   └── web
-│                       ├── css
-│                       └── images
+│                       └── js
 └── design
     ├── adminhtml
     │   └── Lvk

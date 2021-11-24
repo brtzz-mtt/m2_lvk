@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * Copyright © 2021 Bertozzi Matteo
+ *
+ * PHP Version 5
+ *
+ * @category File
+ * @package  Lvk_Base
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  The PHP License, Version 3.0 - PHP.net (http://php.net/license/3_0.txt)
+ * @link     https://github.com/brtzz-mtt
+ */
+
+$currentOrder = $block->getCurrentOrder();
+
+?>
+
+<div class="toolbar-sorter sorter">
+    <?php
+    if (!$block->useCompactSorter()) {
+        ?>
+        <label class="sorter-label" for="sorter"><?php echo __('Sort By') ?></label>
+        <?php
+    }
+    ?>
+    <select id="sorter"
+            data-role="sorter"
+            class="sorter-options">
+        <?php
+        foreach ($block->getAvailableOrders() as $key => $order) {
+            ?>
+            <option value="<?php echo $key ?>"
+                <?php
+                if (!$key) {
+                    ?>
+                    selected="selected" disabled="disabled"
+                    <?php
+                }
+                if (is_string($currentOrder) && ($key == $currentOrder)) {
+                    ?>
+                    selected="selected"
+                    <?php
+                }
+                ?>
+                >
+                <?php echo $block->escapeHtml(__($order)) ?>
+            </option>
+            <?php
+        }
+    ?>
+    </select>
+</div>

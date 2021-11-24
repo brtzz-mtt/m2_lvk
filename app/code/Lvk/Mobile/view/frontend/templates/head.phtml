@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Copyright © 2021 Bertozzi Matteo
+ *
+ * PHP Version 5
+ *
+ * @category File
+ * @package  Lvk_Mobile
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  The PHP License, Version 3.0 - PHP.net (http://php.net/license/3_0.txt)
+ * @link     https://github.com/brtzz-mtt
+ */
+
+if ($block->getHelper()->getConfig('design/mobile/modal_sidebars', $block->getStoreCode())) {
+
+    echo $block->addTag(
+        'script',
+        [
+            'src' => $block->getViewFileUrl('Lvk_Mobile/js/modal_sidebars.js'),
+            'type' => "text/javascript",
+        ]
+    );
+}

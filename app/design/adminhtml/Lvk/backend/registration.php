@@ -24,6 +24,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::THEME,
-    'adminhtml/Lkv/backend',
+    'adminhtml/Lvk/backend',
     __DIR__
 );

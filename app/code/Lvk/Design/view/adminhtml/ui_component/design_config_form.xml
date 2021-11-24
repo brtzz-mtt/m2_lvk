@@ -1,0 +1,673 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="lvk_settings">
+        <argument name="data"
+                  xsi:type="array">
+            <item name="config"
+                  xsi:type="array">
+                <item name="label"
+                      xsi:type="string"
+                      translate="true">LVK Settings</item>
+                <item name="sortOrder"
+                      xsi:type="number">999</item>
+                <item name="additionalClasses"
+                      xsi:type="string">lvk-settings</item>
+            </item>
+        </argument>
+        
+        <fieldset name="header">
+            <argument name="data"
+                      xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Header</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+        	<field name="header_panel_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Panel background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="header_wrapper_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+        
+        <fieldset name="navigation">
+            <argument name="data"
+                      xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Navigation</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+        	<field name="navigation_section_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Navigation bar background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="navigation_items_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Navigation items background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="navigation_items_hover_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Navigation items hover background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="navigation_active_item_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Navigation active item background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="navigation_submenus_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Navigation submenus background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="navigation_submenus_hover_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Navigation submenus hover background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+        
+        <fieldset name="body">
+            <argument name="data"
+                      xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Body</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+            <field name="body_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="body_background_src">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background image</item>
+                        <item name="formElement"
+                              xsi:type="string">fileUploader</item>
+                        <item name="componentType"
+                              xsi:type="string">fileUploader</item>
+                        <item name="notice"
+                              xsi:type="string"
+                              translate="true">Allowed file types: png, gif, jpg, jpeg, svg.</item>
+                        <item name="maxFileSize"
+                              xsi:type="number">5242880</item>
+                        <item name="allowedExtensions"
+                              xsi:type="string">jpg jpeg gif png svg</item>
+                        <item name="uploaderConfig"
+                              xsi:type="array">
+                            <item name="url"
+                                  xsi:type="string">theme/design_config_fileUploader/save</item>
+                        </item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="body_background_src_attachment">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Lvk\Design\Model\Config\Body\Background\AttachmentOptions</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background image attachment</item>
+                        <item name="formElement"
+                              xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="body_background_src_size_custom">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="formElement"
+                              xsi:type="string">hidden</item>
+                        <item name="showFallbackReset"
+                              xsi:type="string">true</item>
+                        <item name="dataType"
+                              xsi:type="string">string</item>
+                    </item>
+                </argument>
+            </field>
+            <field name="body_background_src_size">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Lvk\Design\Model\Config\Body\Background\SizeOptions</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background image size</item>
+                        <item name="formElement"
+                              xsi:type="string">select</item>
+                        <item name="additionalClasses"
+                              xsi:type="string">lvk-width-height</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/select-width-height</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="body_background_src_position_custom">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="formElement"
+                              xsi:type="string">hidden</item>
+                        <item name="showFallbackReset"
+                              xsi:type="string">true</item>
+                        <item name="dataType"
+                              xsi:type="string">string</item>
+                    </item>
+                </argument>
+            </field>
+            <field name="body_background_src_position">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Lvk\Design\Model\Config\Body\Background\PositionOptions</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background image position</item>
+                        <item name="formElement"
+                              xsi:type="string">select</item>
+                        <item name="additionalClasses"
+                              xsi:type="string">lvk-width-height</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/select-width-height</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="body_background_src_repeat">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Lvk\Design\Model\Config\Body\Background\RepeatOptions</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background image repeat</item>
+                        <item name="formElement"
+                              xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="body_background_gradient">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Gradient</item>
+                        <item name="formElement"
+                              xsi:type="string">textarea</item>
+                        <item name="componentType"
+                              xsi:type="string">textarea</item>
+                        <item name="notice"
+                              xsi:type="string"
+                              translate="true">see http://www.colorzilla.com/gradient-editor for configurable valid CSS gradient's code and presets</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+        
+        <fieldset name="footer">
+            <argument name="data"
+                      xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Footer</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+        	<field name="footer_wrapper_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="footer_copyright_background_color">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Copyright background color</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                        <item name="elementTmpl"
+                              xsi:type="string">Lvk_Design/form/element/input-color-picker</item>
+                        <item name="component"
+                              xsi:type="string">Lvk_Design/js/form/element/color-picker</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+        
+        <fieldset name="input">
+            <argument name="data"
+                      xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Input</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+            <field name="input_style_type_number">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Style number-type inputs</item>
+                        <item name="formElement"
+                             xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+        
+        <fieldset name="sidebar">
+             <argument name="data"
+                       xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Sidebar</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+            <field name="sidebar_toggle_titles">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Toggle blocks contents</item>
+                        <item name="formElement"
+                             xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="sidebar_title_main">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Main sidebar title</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="sidebar_title_additional">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Additional sidebar title</item>
+                        <item name="formElement"
+                              xsi:type="string">input</item>
+                        <item name="componentType"
+                              xsi:type="string">input</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="sidebar_hide_product_comparison">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Hide product comparison</item>
+                        <item name="formElement"
+                             xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+        
+        <fieldset name="toolbar">
+             <argument name="data"
+                       xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Toolbar</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+            <field name="toolbar_show_category_title">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Show category title</item>
+                        <item name="formElement"
+                             xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="toolbar_show_field_limiter">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Show field limiter</item>
+                        <item name="formElement"
+                             xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="toolbar_show_position_in_sorting_options">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Show position in sorting options</item>
+                        <item name="formElement"
+                             xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+            
+            <field name="toolbar_use_compact_sorter">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Use compact sorter</item>
+                        <item name="formElement"
+                             xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+         </fieldset>
+         
+         <fieldset name="custom_css">
+            <argument name="data"
+                      xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Custom CSS</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            
+            <field name="plain_text">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="formElement"
+                              xsi:type="string">textarea</item>
+                        <item name="componentType"
+                              xsi:type="string">textarea</item>
+                        <item name="additionalClasses"
+                              xsi:type="string">lvk-full-width</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+    </fieldset>
+</form>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="Lvk\Mobile\Block\Head"
+                   name="lvk_mobile_block_head"
+                   as="lvk_mobile_block_head"
+                   template="Lvk_Mobile::head.phtml"
+                   after="-" />
+        </referenceBlock>
+        <referenceContainer name="page.top">
+            <referenceBlock name="catalog.topnav">
+                <action method="setTemplate">
+                    <argument name="template"
+                              xsi:type="string">Lvk_Mobile::html/topmenu.phtml</argument>
+                </action>
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>

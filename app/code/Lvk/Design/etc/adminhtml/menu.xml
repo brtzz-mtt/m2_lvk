@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_Design::design"
+             resource="Magento_Config::design"
+             title="Design"
+             parent="Lvk_Base::menu"
+             sortOrder="100"
+             module="Magento_Theme" />
+        <add id="Lvk_Design::design_config"
+             resource="Magento_Config::config_design"
+             title="Design Configuration"
+             parent="Lvk_Design::design"
+             sortOrder="111"
+             module="Magento_Theme"
+             action="theme/design_config" />
+        <add id="Lvk_Design::system_design_theme"
+             resource="Magento_Theme::theme"
+             title="Installed Themes"
+             parent="Lvk_Design::design"
+             sortOrder="122"
+             module="Magento_Theme"
+             action="adminhtml/system_design_theme" />
+        <add id="Lvk_Design::menu_configuration_design"
+             resource="Lvk_Design::menu_configuration_design"
+             title="Design Module"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="711"
+             module="Lvk_Design"
+             action="adminhtml/system_config/edit/section/lvk_design" />
+        <add id="Lvk_Design::menu_documentation_design"
+             resource="Lvk_Design::menu_documentation_design"
+             title="Design Module"
+             parent="Lvk_Base::menu_documentation"
+             sortOrder="811"
+             module="Lvk_Design"
+             action="lvk_base/documentation/index/module/Design" />
+    </menu>
+</config>

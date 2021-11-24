@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * Copyright © 2021 Bertozzi Matteo
+ *
+ * PHP Version 5
+ *
+ * @category File
+ * @package  Lvk_Design
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  The PHP License, Version 3.0 - PHP.net (http://php.net/license/3_0.txt)
+ * @link     https://github.com/brtzz-mtt
+ */
+
+if ($block->getHelper()->getConfig('design/sidebar/toggle_titles', $block->getStoreCode())) {
+
+    echo $block->addTag(
+        'script',
+        [
+            'src' => $block->getViewFileUrl('Lvk_Design/js/toggle_titles.js'),
+            'type' => "text/javascript",
+        ]
+    );
+}
+
+echo $block->addTag(
+    'link',
+    [
+        'rel' => "stylesheet",
+        'type' => "text/css",
+        'media' => "all",
+        'href' => $block->getStylesUrl(),
+    ]
+); // because of https://magento.stackexchange.com/questions/99239/remove-pub-media-styles-css-from-theme-in-magento-2-0

@@ -1,0 +1,41 @@
+#menu-lvk-base-menu .level-2.item-design-config > a::before {
+    background-position: -272px -96px;
+}
+#menu-lvk-base-menu .level-2.item-system-design-theme > a::before {
+    background-position: -256px -96px;
+}
+#menu-lvk-base-menu .level-2.item-menu-configuration-design > a::before,
+#menu-lvk-base-menu .level-2.item-menu-documentation-design > a::before {
+    background-position: 0 -64px;
+}
+
+.fieldset-wrapper[data-index=lvk_settings] > .fieldset-wrapper-title {
+    background-image: url('../images/icon_32x32.png') !important;
+    background-position: 9px 11px !important;
+    background-repeat: no-repeat !important;
+    padding-left: 52px;
+}
+
+.admin__fieldset > .admin__field.lvk-full-width > .admin__field-control {
+	width: calc(100% - 135px);
+}
+.admin__fieldset > .admin__field.lvk-full-width > .admin__field-control > textarea {
+	height: 255px;
+}
+
+
+input.lvk-color {
+    transition: .125s;
+    width: 128px !important;
+}
+
+.lvk-width-height input[type=number] {
+    width: 64px;
+}
+
+.lvk-width-height-fields {
+    display: none;
+}
+.lvk-width-height-fields > * {
+    margin-left: 8px;
+}

@@ -1,7 +1,7 @@
 {
-    "name": "lkv/theme-base",
+    "name": "lvk/theme-base",
     "require": {
-        "lkv/module-base": "^0.2.0"
+        "lvk/module-base": "^0.2.0"
     },
     "type": "magento2-theme",
     "version": "0.2.0",

@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="lvk_settings">
+        <fieldset name="mobile">
+            <argument name="data"
+                      xsi:type="array">
+                <item name="config"
+                      xsi:type="array">
+                    <item name="label"
+                          xsi:type="string"
+                          translate="true">Mobile</item>
+                    <item name="collapsible"
+                          xsi:type="boolean">true</item>
+                    <item name="level"
+                          xsi:type="number">1</item>
+                </item>
+            </argument>
+            <field name="mobile_navigation_direction">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Lvk\Mobile\Model\Admin\Design\Config\Mobile\Navigation\DirectionOptions</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Navigation direction</item>
+                        <item name="formElement"
+                              xsi:type="string">select</item>
+                    </item>
+                </argument>
+            </field>
+            <field name="mobile_modal_sidebars">
+                <argument name="data"
+                          xsi:type="array">
+                    <item name="options"
+                          xsi:type="object">Magento\Config\Model\Config\Source\Yesno</item>
+                    <item name="config"
+                          xsi:type="array">
+                        <item name="label"
+                              xsi:type="string"
+                              translate="true">Modal sidebars</item>
+                        <item name="formElement"
+                              xsi:type="string">select</item>
+                        <item name="notice"
+                              xsi:type="string"
+                              translate="true">Needs at least one not empty sidebar title (see Sidebar tab)</item>
+                    </item>
+                </argument>
+            </field>
+        </fieldset>
+    </fieldset>
+</form>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Theme\Model\Design\Config\MetadataProvider">
+        <arguments>
+            <argument name="metadata"
+                      xsi:type="array">
+                <item name="mobile_navigation_direction"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/mobile/navigation_direction</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/mobile</item>
+                </item>
+                <item name="mobile_modal_sidebars"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/mobile/modal_sidebars</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/mobile</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

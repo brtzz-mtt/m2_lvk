@@ -24,6 +24,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::THEME,
-    'frontend/Lkv/pasta',
+    'frontend/Lvk/pasta',
     __DIR__
 );

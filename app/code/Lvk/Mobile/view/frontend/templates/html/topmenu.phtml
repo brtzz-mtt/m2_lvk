@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Copyright © 2021 Bertozzi Matteo
+ *
+ * PHP Version 5
+ *
+ * @category File
+ * @package  Lvk_Mobile
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  The PHP License, Version 3.0 - PHP.net (http://php.net/license/3_0.txt)
+ * @link     https://github.com/brtzz-mtt
+ */
+
+$columnsLimit = $block->getColumnsLimit() ?: 0;
+$_menu = $block->getHtml('level-top', 'submenu', $columnsLimit);
+
+$helper = $this->helper('Lvk\Design\Helper\Data');
+$storeManager = \Magento\Framework\App\ObjectManager::getInstance()->get('\Magento\Store\Model\StoreManagerInterface');
+$navigationDirection = $helper->getConfig('design/mobile/navigation_direction', $storeManager->getStore()->getCode());
+
+?>
+
+<nav class="navigation" data-action="navigation">
+    <ul data-mage-init='{"menu": {"responsive": true, "expanded": true, "position": {"my": "left top", "at": "left bottom"}, "invert_direction": <?php echo $navigationDirection ?>}}'>
+        <?php /* @escapeNotVerified */ echo $_menu; ?>
+        <?php /* @escapeNotVerified */ echo $block->getChildHtml(); ?>
+    </ul>
+</nav>

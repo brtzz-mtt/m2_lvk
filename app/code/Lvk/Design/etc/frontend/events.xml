@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="lvk_developertoolbox_block_toolbar">
+        <observer name="lvk_design_observer_lvk_developertoolbox_block_toolbar"
+                  instance="Lvk\Design\Observer\Lvk\DeveloperToolBox\Block\Toolbar" />
+    </event>
+</config>

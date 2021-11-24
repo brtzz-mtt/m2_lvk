@@ -3,7 +3,7 @@ function initInputTypeNumber(wrapper = null)
     var check = true;
     
     jQuery.ajax({
-        url: '/lkv_base/configuration/get/input/style_type_number/',
+        url: '/lvk_base/configuration/get/input/style_type_number/',
         dataType: 'json',
         async: false
     }).done(function(data)
@@ -16,7 +16,7 @@ function initInputTypeNumber(wrapper = null)
         return; // blocks execution if boolean setting returns false
     }
     
-    jQuery((wrapper ? wrapper + ' ' : '') + 'input[type="number"]:not(.lkv-base-theme)').each(function () {
+    jQuery((wrapper ? wrapper + ' ' : '') + 'input[type="number"]:not(.lvk-base-theme)').each(function () {
 
         var input = jQuery(this),
             down = jQuery('<span class="number-nav input-down">&#x25bc;</span>').insertAfter(input),
@@ -53,7 +53,7 @@ function initInputTypeNumber(wrapper = null)
             });
         }
         
-        input.addClass('lkv-base-theme');
+        input.addClass('lvk-base-theme');
     });
 }
 
