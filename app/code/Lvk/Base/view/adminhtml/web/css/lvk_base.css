@@ -1,0 +1,117 @@
+#menu-lvk-base-menu > a::before {
+    background-image: url('../images/icon_32x32.png');
+    background-position: center 4px;
+    background-repeat: no-repeat;
+    content: '';
+    height: 36px;
+    margin-bottom: 0;
+}
+
+#menu-lvk-base-menu > a > span {
+    display: block;
+    padding: 5px;
+}
+#menu-lvk-base-menu .level-2 > a {
+    padding-left: 40px;
+    position: relative;
+}
+#menu-lvk-base-menu .level-2 > a::before {
+    background-image: url('../images/icons_16x16.png');
+    background-position: -160px -160px;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 16px;
+    position: absolute;
+    top: 14px;
+    width: 16px;
+}
+#menu-lvk-base-menu .level-2.item-menu-system-configuration > a::before {
+    background-position: -64px -96px;
+    top: 13px;
+}
+#menu-lvk-base-menu .level-2.item-menu-system-cleanmedia > a::before {
+    background-position: -128px -224px;
+}
+#menu-lvk-base-menu .level-2.item-menu-system-cacheflush > a::before {
+    background-position: -176px -16px;
+}
+#menu-lvk-base-menu .level-2.item-menu-system-cacheflushall > a::before {
+    background-position: -144px -224px;
+}
+
+.admin__page-nav.lvk .admin__page-nav-title {
+    background-image: url('../images/icon_32x32.png') !important;
+    background-position: 8px !important;
+    background-repeat: no-repeat !important;
+    padding-left: 50px;
+}
+
+.accordion .config input[id^="lvk_"] + .note::before {
+    color: #514943;
+    content: '\e633';
+    display: inline-block;
+    font-family: 'Admin Icons';
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-right: 3px;
+    overflow: hidden;
+    position: relative;
+    speak: none;
+    text-align: center;
+    top: 2px;
+    -webkit-font-smoothing: antialiased;
+}
+.accordion .config .note .lvk-logo {
+    background-image: url('../images/logo.png');
+    background-position: 0 top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 76px;
+    position: relative;
+    top: -2px;
+    width: 246px;
+}
+
+#row_lvk_base_lvk_base_information_lvk_base_information_credits span[data-config-scope]:before {
+    display: none;
+}
+
+#menu-lvk-base-menu .level-2.item-menu-configuration-catalog > a::before {
+    background-position: -480px -16px;
+}
+
+#menu-lvk-base-menu .level-2.item-menu-configuration-customers > a::before {
+    background-position: -32px -96px;
+}
+
+.admin__page-nav-item.lvk_base > a {
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.admin__page-nav-item.lvk > a {
+    padding-left: 40px;
+}
+
+.admin__page-nav-item.lvk > a::before {
+    background-image: url('../images/icons_16x16.png');
+    background-position: -160px -160px;
+    content: '';
+    display: block;
+    height: 16px;
+    left: 14px;
+    position: absolute;
+    top: 21px;
+    width: 16px;
+}
+
+.admin__page-nav-item.lvk.lvk_base_catalog > a::before {
+    background-position: -480px -16px;
+}
+
+.admin__page-nav-item.lvk.lvk_base_customers > a::before {
+    background-position: -32px -96px;
+}

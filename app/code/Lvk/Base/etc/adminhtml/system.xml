@@ -1,0 +1,127 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com and you will be sent a copy immediately.
+ *
+ * PHP version 7.3.17
+ *
+ * @category Modules
+ * @package  Magento
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  http://opensource.org/licenses/osl-3.0.php Open Software License 3.0
+ * @link     https://github.com/brtzz-mtt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="lvk"
+             class="lvk"
+             translate="label"
+             sortOrder="000">
+            <label>LVK</label>
+        </tab>
+        <section id="lvk_base"
+                 translate="label" 
+                 type="text"
+                 sortOrder="000"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <class>lvk_base</class>
+            <label>GENERAL</label>
+            <tab>lvk</tab>
+            <resource>Lvk_Base::config</resource>
+            <group id="base_features"
+                   translate="label"
+                   type="text"
+                   sortOrder="000"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Base features</label>
+                <field id="log_config_changes"
+                       translate="label comment"
+                       type="select"
+                       sortOrder="000"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Save configuration changes in log</label>
+                    <comment>(entries will be logged under /var/log/lvk/info.log)</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="suppress_version_too_high_errors"
+                       translate="label"
+                       type="select"
+                       sortOrder="100"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Suppress version-too-high errors exception at DB status validation</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="suppress_version_too_low_errors"
+                       translate="label"
+                       type="select"
+                       sortOrder="200"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Suppress version-too-low errors exception at DB status validation</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="information"
+                   translate="label"
+                   type="text"
+                   sortOrder="100"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Information</label>
+                <field id="credits"
+                       type="note"
+                       sortOrder="999"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label><![CDATA[Copyright &copy; 2015-2021<br /><br /><a href="http://www.LVK.net" target="_blank">LVK sales solutions GmbH<br />Kurfürstendamm 125A<br />D-10711 Berlin</a><br /><br />]]></label>
+                    <comment><![CDATA[<br /><span class="lvk-logo"></span>]]></comment>
+                </field>
+            </group>
+        </section>
+        <section id="lvk_base_catalog"
+                 translate="label" 
+                 type="text"
+                 sortOrder="111"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <class>lvk lvk_base_catalog</class>
+            <label>Catalog</label>
+            <tab>lvk</tab>
+            <resource>Lvk_Base::config</resource>
+        </section>
+        <section id="lvk_base_customers"
+                 translate="label" 
+                 type="text"
+                 sortOrder="222"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <class>lvk lvk_base_customers</class>
+            <label>Customers</label>
+            <tab>lvk</tab>
+            <resource>Lvk_Base::config</resource>
+        </section>
+    </system>
+</config>

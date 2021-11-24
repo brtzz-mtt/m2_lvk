@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com and you will be sent a copy immediately.
+ *
+ * PHP version 7.3.17
+ *
+ * @category Modules
+ * @package  Magento
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  http://opensource.org/licenses/osl-3.0.php Open Software License 3.0
+ * @link     https://github.com/brtzz-mtt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_Base::menu"
+             resource="Lvk_Base::menu"
+             title="LVK"
+             sortOrder="11"
+             dependsOnModule="Lvk_Base"
+             module="Lvk_Base" />
+        <add id="Lvk_Base::menu_configuration"
+             resource="Lvk_Base::menu_configuration"
+             title="Configuration"
+             parent="Lvk_Base::menu"
+             sortOrder="700"
+             module="Lvk_Base" />
+        <add id="Lvk_Base::menu_configuration_catalog"
+             resource="Lvk_Base::menu_configuration_catalog"
+             title="Catalog"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="711"
+             module="Lvk_Base"
+             action="adminhtml/system_config/edit/section/lvk_base_catalog" />
+        <add id="Lvk_Base::menu_configuration_customers"
+             resource="Lvk_Base::menu_configuration_customers"
+             title="Customers"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="722"
+             module="Lvk_Base"
+             action="adminhtml/system_config/edit/section/lvk_base_customers" />
+        <add id="Lvk_Base::menu_system"
+             resource="Lvk_Base::menu_system"
+             title="System"
+             parent="Lvk_Base::menu"
+             sortOrder="900"
+             module="Lvk_Base" />
+        <add id="Lvk_Base::menu_system_configuration"
+             resource="Lvk_Base::menu_system_configuration"
+             title="Configuration"
+             parent="Lvk_Base::menu_system"
+             sortOrder="911"
+             module="Lvk_Base"
+             action="adminhtml/system_config/edit/section/lvk_base" />
+        <add id="Lvk_Base::menu_system_cacheflush"
+             resource="Lvk_Base::menu_system_cacheflush"
+             title="Flush Magento's Cache"
+             parent="Lvk_Base::menu_system"
+             sortOrder="988"
+             module="Lvk_Base"
+             action="adminhtml/cache/flushSystem" />
+        <add id="Lvk_Base::menu_system_cacheflushall"
+             resource="Lvk_Base::menu_system_cacheflushall"
+             title="Flush Storage Cache"
+             parent="Lvk_Base::menu_system"
+             sortOrder="999"
+             module="Lvk_Base"
+             action="adminhtml/cache/flushAll" />
+        <add id="Lvk_Base::menu_system_cleanmedia"
+             resource="Lvk_Base::menu_system_cleanmedia"
+             title="Flush JS/CSS Cache"
+             parent="Lvk_Base::menu_system"
+             sortOrder="977"
+             module="Lvk_Base"
+             action="adminhtml/cache/cleanMedia" />
+    </menu>
+</config>
