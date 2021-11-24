@@ -1,0 +1,134 @@
+@background-color: transparent;
+@text-color: transparent;
+@primary-color: transparent;
+@secondary-color: transparent;
+@tertiary-color: transparent;
+@grey-brighter: transparent;
+@grey-bright: transparent;
+@grey-normal: transparent;
+@grey-dark: transparent;
+@grey-darker: transparent;
+
+//@magento_import '_colors.less';
+
+@primary-color-brighter: lighten(@primary-color, 50%);
+@primary-color-bright: lighten(@primary-color, 25%);
+@primary-color-dark: darken(@primary-color, 25%);
+@primary-color-darker: darken(@primary-color, 50%);
+@secondary-color-brighter: lighten(@secondary-color, 50%);
+@secondary-color-bright: lighten(@secondary-color, 25%);
+@secondary-color-dark: darken(@secondary-color, 25%);
+@secondary-color-darker: darken(@secondary-color, 50%);
+@tertiary-color-brighter: lighten(@tertiary-color, 50%);
+@tertiary-color-bright: lighten(@tertiary-color, 25%);
+@tertiary-color-dark: darken(@tertiary-color, 25%);
+@tertiary-color-darker: darken(@tertiary-color, 50%);
+
+.theme-color {
+    &.background-color {
+        background-color: @background-color;
+        box-shadow: 0 0 1px @text-color inset;
+        color: @text-color;
+    }
+    &.text-color {
+        background-color: @text-color;
+        color: @background-color;
+    }
+    &.primary-color-brighter {
+        background-color: @primary-color-brighter;
+        color: @background-color - @primary-color-brighter;
+    }
+    &.primary-color-bright {
+        background-color: @primary-color-bright;
+        color: @background-color - @primary-color-bright;
+    }
+    &.primary-color {
+        background-color: @primary-color;
+        color: @background-color - @primary-color;
+    }
+    &.primary-color-dark {
+        background-color: @primary-color-dark;
+        color: @background-color - @primary-color-dark;
+    }
+    &.primary-color-darker {
+        background-color: @primary-color-darker;
+        color: @background-color - @primary-color-darker;
+    }
+    &.secondary-color-brighter {
+        background-color: @secondary-color-brighter;
+        color: @background-color - @secondary-color-brighter;
+    }
+    &.secondary-color-bright {
+        background-color: @secondary-color-bright;
+        color: @background-color - @secondary-color-bright;
+    }
+    &.secondary-color {
+        background-color: @secondary-color;
+        color: @background-color - @secondary-color;
+    }
+    &.secondary-color-dark {
+        background-color: @secondary-color-dark;
+        color: @background-color - @secondary-color-dark;
+    }
+    &.secondary-color-darker {
+        background-color: @secondary-color-darker;
+        color: @background-color - @secondary-color-darker;
+    }
+    &.tertiary-color-brighter {
+        background-color: @tertiary-color-brighter;
+        color: @background-color - @tertiary-color-brighter;
+    }
+    &.tertiary-color-bright {
+        background-color: @tertiary-color-bright;
+        color: @background-color - @tertiary-color-bright;
+    }
+    &.tertiary-color {
+        background-color: @tertiary-color;
+        color: @background-color - @tertiary-color;
+    }
+    &.tertiary-color-dark {
+        background-color: @tertiary-color-dark;
+        color: @background-color - @tertiary-color-dark;
+    }
+    &.tertiary-color-darker {
+        background-color: @tertiary-color-darker;
+        color: @background-color - @tertiary-color-darker;
+    }
+    &.grey-brighter {
+        background-color: @grey-brighter;
+        color: #888 - @grey-brighter;
+    }
+    &.grey-bright {
+        background-color: @grey-bright;
+        color: #888 - @grey-bright;
+    }
+    &.grey-normal {
+        background-color: @grey-normal;
+        color: #888 - @grey-normal;
+    }
+    &.grey-dark {
+        background-color: @grey-dark;
+        color: #888 - @grey-dark;
+    }
+    &.grey-darker {
+        background-color: @grey-darker;
+        color: #888 - @grey-darker;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: @text-color;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+br.clearfix {
+    clear: both;
+}
+
+//@magento_import '_styleguide.less';
+//@magento_import '_base.less';
+//@magento_import '_responsivity.less';
