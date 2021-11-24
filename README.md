@@ -76,10 +76,6 @@ app
 │       │   ├── Controller
 │       │   │   ├── Responsivity
 │       │   │   └── Styleguide
-│       │   ├── documentation
-│       │   │   ├── de_DE
-│       │   │   ├── en_EN
-│       │   │   └── it_IT
 │       │   ├── etc
 │       │   │   ├── adminhtml
 │       │   │   └── frontend
@@ -109,7 +105,6 @@ app
 │       │       │   └── web
 │       │       │       ├── css
 │       │       │       ├── images
-│       │       │       │   └── documentation
 │       │       │       ├── js
 │       │       │       │   └── form
 │       │       │       │       └── element
@@ -130,10 +125,6 @@ app
 │       │               └── js
 │       └── Mobile
 │           ├── Block
-│           ├── documentation
-│           │   ├── de_DE
-│           │   ├── en_EN
-│           │   └── it_IT
 │           ├── etc
 │           │   └── adminhtml
 │           ├── i18n
@@ -156,9 +147,7 @@ app
 │               │   ├── layout
 │               │   ├── ui_component
 │               │   └── web
-│               │       ├── css
-│               │       └── images
-│               │           └── documentation
+│               │       └── css
 │               └── frontend
 │                   ├── layout
 │                   ├── templates
