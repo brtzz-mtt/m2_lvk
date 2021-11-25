@@ -1,0 +1,19 @@
+{
+    "name": "lvk/module-sociallinks",
+    "type": "magento2-module",
+    "version": "0.1.4",
+    "license": [
+        "proprietary"
+    ],
+    "require": {
+        "lvk/module-base": "^0.2.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Lvk\\SocialLinks\\": ""
+        }
+    }
+}

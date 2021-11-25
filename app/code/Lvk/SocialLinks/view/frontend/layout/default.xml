@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Lvk_SocialLinks::css/font-awesome.min.css" />
+        <css src="Lvk_SocialLinks::css/lvk_sociallinks.css" />
+    </head>
+    <body>
+        <container name="lvk_sociallinks"
+                   as="lvk_sociallinks"
+                   label="LVK SocialLinks"
+                   htmlTag="div"
+                   htmlClass="lvk-sociallinks">
+            <block class="Lvk\SocialLinks\Block\Frontend"
+                   name="lvk_sociallinks_block_frontend"
+                   as="lvk_sociallinks_block_frontend"
+                   template="frontend.phtml"
+                   ifconfig="lvk_sociallinks/frontend/show_links" />
+        </container>
+    </body>
+</page>

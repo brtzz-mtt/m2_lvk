@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<referenceBlock name="store.menu">
+    	    <referenceBlock name="catalog.topnav" remove="true" />
+    	    <block class="Lvk\Navigation\Block\TreeData"
+                   name="lvk_navigation_block_treedata"
+                   as="lvk_navigation_block_treedata"
+                   template="Lvk_Navigation::default/treeData.phtml"
+                   before="-" />
+    	</referenceBlock>
+    </body>
+</page>

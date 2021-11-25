@@ -1,0 +1,5 @@
+#menu-lvk-base-menu .level-2.item-menu-configuration-categorytree > a::before,
+#menu-lvk-base-menu .level-2.item-menu-documentation-categorytree > a::before {
+    background-position: -416px 0;
+    left: 17px;
+}

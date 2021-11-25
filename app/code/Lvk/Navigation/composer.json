@@ -1,0 +1,19 @@
+{
+    "name": "lvk/module-navigation",
+    "require": {
+        "lvk/module-base": "^0.2.0"
+    },
+    "type": "magento2-module",
+    "version": "0.0.7",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Lvk\\Navigation\\": ""
+        }
+    }
+}

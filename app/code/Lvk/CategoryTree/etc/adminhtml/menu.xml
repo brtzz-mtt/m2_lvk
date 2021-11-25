@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_CategoryTree::menu_configuration_categorytree"
+             resource="Lvk_CategoryTree::menu_configuration_categorytree"
+             title="CategoryTree Module"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="711"
+             module="Lvk_CategoryTree"
+             action="adminhtml/system_config/edit/section/lvk_categorytree" />
+        <add id="Lvk_CategoryTree::menu_documentation_categorytree"
+             resource="Lvk_CategoryTree::menu_documentation_categorytree"
+             title="CategoryTree Module"
+             parent="Lvk_Base::menu_documentation"
+             sortOrder="811"
+             module="Lvk_CategoryTree"
+             action="lvk_base/documentation/index/module/CategoryTree" />
+    </menu>
+</config>

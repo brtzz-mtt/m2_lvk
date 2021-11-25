@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="lvk_categorytree"
+            class="Lvk\CategoryTree\Block\Frontend\Widget"
+            placeholder_image="Lvk_Base::images/icon_32x32.png">
+        <label>LVK CategoryTree</label>
+        <description>LVK CategoryTree Widget</description>
+        <parameters>
+            <parameter name="block_title"
+                       xsi:type="text"
+                       required="false">
+                <label translate="true">Block title</label>
+            </parameter>
+            <parameter name="tree_root"
+                       xsi:type="select"
+                       required="true"
+                       source_model="Lvk\CategoryTree\Model\Config\Source\RootOptions">
+                <label translate="true">Root category</label>
+            </parameter>
+            <parameter name="custom_root"
+                       xsi:type="select"
+                       required="false"
+                       source_model="Lvk\CategoryTree\Model\Config\Source\CategoryOptions">
+                <label translate="true">Custom root category</label>
+                <depends>
+                    <parameter name="tree_root"
+                               value="3" />
+                </depends>
+            </parameter>
+            <parameter name="tree_depth"
+                       xsi:type="select"
+                       required="true"
+                       source_model="Lvk\CategoryTree\Model\Config\Source\DepthOptions">
+                <label translate="true">Tree depth</label>
+            </parameter>
+            <parameter name="show_empty"
+                       xsi:type="select"
+                       required="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show empty categories</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

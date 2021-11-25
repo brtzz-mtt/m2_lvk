@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_Navigation::menu_configuration_navigation"
+             resource="Lvk_Navigation::menu_configuration_navigation"
+             title="Navigation Module"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="711"
+             module="Lvk_Navigation"
+             action="adminhtml/system_config/edit/section/lvk_navigation" />
+        <add id="Lvk_Navigation::menu_documentation_navigation"
+             resource="Lvk_Navigation::menu_documentation_navigation"
+             title="Navigation Module"
+             parent="Lvk_Base::menu_documentation"
+             sortOrder="811"
+             module="Lvk_Navigation"
+             action="lvk_base/documentation/index/module/Navigation" />
+    </menu>
+</config>

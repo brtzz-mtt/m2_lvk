@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * Copyright © 2021 Bertozzi Matteo
+ *
+ * PHP Version 5
+ *
+ * @category File
+ * @package  Lvk_SocialLinks
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  The PHP License, Version 3.0 - PHP.net (http://php.net/license/3_0.txt)
+ * @link     https://github.com/brtzz-mtt
+ */
+
+?>
+
+<div class="wrapper">
+    <span><?php echo __($block->getBlockTitle()) ?></span>
+    <ol>
+        <?php
+        foreach ($block->getSocialLinks() as $key => $values) {
+            ?>
+            <li class="lvk-<?php echo $key ?>">
+                <a href="<?php echo $values['url'] ?>"
+                   target="_blank">
+                    <?php echo $values['label'] ?>
+                </a>
+            </li>
+            <?php
+        }
+        ?>
+    </ol>
+</div>
+
+<br class="clearfix" />

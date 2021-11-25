@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="lvk_navigation"
+                 translate="label"
+                 sortOrder="111"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>Navigation</label>
+            <tab>lvk</tab>
+            <resource>Lvk_Navigation::navigation_configuration</resource>
+            <group id="structure"
+                   translate="label"
+                   sortOrder="000"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Structure</label>
+                <field id="navigation_tree"
+                       translate="label"
+                       type="text"
+                       sortOrder="000"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Navigation tree</label>
+                    <frontend_model>Lvk\Navigation\Block\Adminhtml\Form\Field\Tree</frontend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
