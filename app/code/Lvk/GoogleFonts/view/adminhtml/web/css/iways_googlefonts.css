@@ -1,0 +1,40 @@
+#menu-lvk-base-menu .level-2.item-menu-configuration-googlefonts > a::before,
+#menu-lvk-base-menu .level-2.item-menu-documentation-googlefonts > a::before {
+    background-position: -544px -80px;
+    left: 17px;
+}
+
+.lvk-font-face:nth-child(1n+3) {
+	border-top: 1px solid #ededed !important;
+	padding-top: 30px !important;
+}
+
+.lvk-font-face input[type=number] {
+    width: 64px;
+}
+
+.lvk-font-face-fields {
+    display: block;
+    margin-top: 8px;
+}
+.lvk-font-face-fields > * {
+    margin-right: 8px;
+}
+
+.lvk-font-face-fields select.loading {
+    background-image: url('../../images/ajax-loader.gif');
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+    min-width: 43px;
+}
+
+.lvk-font-face-fields select.loading ~ * {
+    display: none;
+}
+
+.lvk-font-face-fields > .lvk-preview {
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 8px;
+    padding: 8px;
+}

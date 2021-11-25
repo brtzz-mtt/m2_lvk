@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="lvk_googlefonts"
+                 translate="label"
+                 sortOrder="111"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>Google Fonts</label>
+            <tab>lvk</tab>
+            <resource>Lvk_GoogleFonts::config</resource>
+            <group id="credentials"
+                   translate="label"
+                   sortOrder="000"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Credentials</label>
+                <field id="api_key"
+                       translate="label"
+                       type="text"
+                       sortOrder="000"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>API-Key</label>
+                    <comment>https://developers.google.com/fonts/docs/developer_api</comment>
+                </field>
+                <field id="api_test"
+                       translate="label"
+                       sortOrder="111"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>API Test</label>
+                    <frontend_model>Lvk\GoogleFonts\Block\Adminhtml\System\Config\Apitest</frontend_model>
+                </field>
+            </group>
+            <group id="settings"
+                   translate="label"
+                   sortOrder="111"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Settings</label>
+                <field id="active_fonts"
+                       translate="label"
+                       type="multiselect"
+                       sortOrder="000"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Active fonts</label>
+                    <source_model>Lvk\GoogleFonts\Model\Config\Source\FontOptions</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

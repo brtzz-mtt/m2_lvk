@@ -1,0 +1,20 @@
+{
+    "name": "lvk/module-developertoolbox",
+    "require": {
+        "lvk/module-base": "100.0.*",
+        "magento-ecg/coding-standard": "3.0.*"
+    },
+    "type": "magento2-module",
+    "version": "0.0.1",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Lvk\\DeveloperToolBox\\": ""
+        }
+    }
+}

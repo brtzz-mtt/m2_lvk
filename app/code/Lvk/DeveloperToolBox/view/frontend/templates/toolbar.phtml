@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Copyright © 2021 Bertozzi Matteo
+ *
+ * PHP Version 5
+ *
+ * @category File
+ * @package  Lvk_DeveloperToolBox
+ * @author   Bertozzi Matteo <brtzz.mtt@gmail.com>
+ * @license  The PHP License, Version 3.0 - PHP.net (http://php.net/license/3_0.txt)
+ * @link     https://github.com/brtzz-mtt
+ */
+
+$adminLink = ($adminUri = $block->getAdminUri()) // todo move this in block ($block->getAdminLink())
+             ? '<span><a href="' . $adminUri . '"'
+             . '         target="_BLANK">Backend</a></span>'
+             : false;
+
+if ($block->sessionHelper->isAdminLogged()) {
+    ?>
+    <div class="lvk-toolbar">
+        <?php
+        echo $block->getItemsHtml() . $adminLink;
+        ?>
+    </div>
+    <?php
+}
+
+?>
+
+<script type="text/javascript">
+    require([
+        'jquery'
+    ], function($)
+    {
+        if (window.parent == window) {
+            $('.lvk-toolbar').show();
+        }
+    });
+</script>

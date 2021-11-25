@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_OpeningHours::menu_configuration_openinghours" title="OpeningHours Module" module="Lvk_OpeningHours"
+             sortOrder="711" parent="Lvk_Base::menu_configuration" action="adminhtml/system_config/edit/section/lvk_openinghours"
+             resource="Lvk_OpeningHours::menu_configuration_openinghours" />
+        <add id="Lvk_OpeningHours::menu_documentation_openinghours" title="OpeningHours Module" module="Lvk_OpeningHours"
+             sortOrder="811" parent="Lvk_Base::menu_documentation" action="lvk_base/doc/index/module/Lvk_OpeningHours"
+             resource="Lvk_OpeningHours::menu_documentation_openinghours" />
+    </menu>
+</config>

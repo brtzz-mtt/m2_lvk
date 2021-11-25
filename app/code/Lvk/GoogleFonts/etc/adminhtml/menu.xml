@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_GoogleFonts::menu_configuration_googlefonts"
+             resource="Lvk_GoogleFonts::menu_configuration_googlefonts"
+             title="GoogleFonts Module"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="711"
+             module="Lvk_GoogleFonts"
+             action="adminhtml/system_config/edit/section/lvk_googlefonts" />
+        <add id="Lvk_GoogleFonts::menu_documentation_googlefonts"
+             resource="Lvk_GoogleFonts::menu_documentation_googlefonts"
+             title="GoogleFonts Module"
+             parent="Lvk_Base::menu_documentation"
+             sortOrder="811"
+             module="Lvk_GoogleFonts"
+             action="lvk_base/documentation/index/module/GoogleFonts"  />
+    </menu>
+</config>

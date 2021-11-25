@@ -1,0 +1,25 @@
+#menu-lvk-base-menu .level-1.item-menu-developertoolbox > strong {
+    padding-left: 40px;
+    position: relative;
+}
+#menu-lvk-base-menu .level-1.item-menu-developertoolbox > strong::before {
+    background-image: url('../images/icon_24x24.png');
+    content: '';
+    display: block;
+    height: 24px;
+    left: 13px;
+    position: absolute;
+    top: 11px;
+    width: 24px;
+}
+#menu-lvk-base-menu .level-2.item-menu-documentation-lvk-magento-2 > a::before {
+    background-position: -560px -224px;
+}
+#menu-lvk-base-menu .level-2.item-menu-configuration-developertoolbox > a::before,
+#menu-lvk-base-menu .level-2.item-menu-documentation-developertoolbox > a::before {
+    background-position: -544px -112px;
+}
+#menu-lvk-base-menu .level-2.item-menu-developertoolbox-component-index > a::before {
+    background-position: -32px -192px;
+    left: 16px;
+}

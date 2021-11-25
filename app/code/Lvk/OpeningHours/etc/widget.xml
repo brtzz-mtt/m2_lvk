@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="lvk_openinghours_opening" class="Lvk\OpeningHours\Block\Opening\Widget"
+            placeholder_image="Lvk_Base::images/icon_32x32.png">
+        <label>LVK OpeningHours Opening</label>
+        <description>LVK OpeningHours Opening Widget</description>
+        <parameters>
+            <parameter name="first_day" xsi:type="select" required="true"
+                       source_model="Lvk\OpeningHours\Model\Config\Source\Days\First">
+                <label translate="true">First day of the week</label>
+            </parameter>
+            <parameter name="compress_table" xsi:type="select" required="false"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Compress table</label>
+            </parameter>
+        </parameters>
+    </widget>
+    
+    <widget id="lvk_openinghours_status" class="Lvk\OpeningHours\Block\Status\Widget"
+            placeholder_image="Lvk_Base::images/icon_32x32.png">
+        <label>LVK OpeningHours Status</label>
+        <description>LVK OpeningHours Status Widget</description>
+    </widget>
+</widgets>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_DeveloperToolBox::menu_configuration_developertoolbox"
+             resource="Lvk_DeveloperToolBox::menu_configuration_developertoolbox"
+             title="DeveloperToolBox Module"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="711"
+             module="Lvk_DeveloperToolBox"
+             action="adminhtml/system_config/edit/section/lvk_developertoolbox" />
+        <add id="Lvk_DeveloperToolBox::menu_documentation_lvk_magento_2"
+             resource="Lvk_DeveloperToolBox::menu_documentation_lvk_magento_2"
+             title="LVK Magento 2"
+             parent="Lvk_Base::menu_documentation"
+             sortOrder="800"
+             module="Lvk_DeveloperToolBox"
+             action="lvk_base/documentation/index/dev/1" />
+        <add id="Lvk_DeveloperToolBox::menu_documentation_developertoolbox"
+             resource="Lvk_DeveloperToolBox::menu_documentation_developertoolbox"
+             title="DeveloperToolBox Module"
+             parent="Lvk_Base::menu_documentation"
+             sortOrder="811"
+             module="Lvk_DeveloperToolBox"
+             action="lvk_base/documentation/index/module/DeveloperToolBox" />
+        <add id="Lvk_DeveloperToolBox::menu_developertoolbox"
+             resource="Lvk_DeveloperToolBox::menu_developertoolbox"
+             title="Developer's Tool-Box"
+             parent="Lvk_Base::menu"
+             sortOrder="1000"
+             module="Lvk_DeveloperToolBox" />
+        <add id="Lvk_DeveloperToolBox::menu_developertoolbox_component_index"
+             resource="Lvk_DeveloperToolBox::menu_developertoolbox_component_index"
+             title="Components index"
+             parent="Lvk_DeveloperToolBox::menu_developertoolbox"
+             sortOrder="1111"
+             module="Lvk_DeveloperToolBox"
+             action="lvk_developertoolbox/component/index" />
+    </menu>
+</config>

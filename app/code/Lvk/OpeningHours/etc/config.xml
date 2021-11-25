@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <lvk_openinghours>
+            <settings>
+                <first_day>1</first_day>
+                <compress_table>1</compress_table>
+            </settings>
+        </lvk_openinghours>
+    </default>
+</config>

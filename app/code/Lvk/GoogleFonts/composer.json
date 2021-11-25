@@ -1,0 +1,16 @@
+{
+    "name": "lvk/module-googlefonts",
+    "type": "magento2-module",
+    "require": {
+        "lvk/module-design": "^0.1.0"
+    },
+    "version": "0.1.8",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Lvk\\GoogleFonts\\": ""
+        }
+    }
+}

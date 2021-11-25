@@ -1,0 +1,638 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Lvk\GoogleFonts\Observer\Lvk\Design\Admin\System\Config\Changed\Section\Design">
+        <arguments>
+            <argument name="fontSelectors"
+                      xsi:type="array">
+                <item name="design/fonts/body"
+                      xsi:type="string">html body</item>
+                <item name="design/fonts/h1"
+                      xsi:type="string">h1</item>
+                <item name="design/fonts/h2"
+                      xsi:type="string">h2</item>
+                <item name="design/fonts/h3"
+                      xsi:type="string">h3</item>
+                <item name="design/fonts/link"
+                      xsi:type="string">a, .alink, a:visited, .alink:visited</item>
+                <item name="design/fonts/link_hover"
+                      xsi:type="string">a:hover, .alink:hover</item>
+                
+                <item name="design/navigation/nav"
+                      xsi:type="string">.navigation .level0 > .level-top</item>
+                <item name="design/navigation/nav_hover"
+                      xsi:type="string">.navigation .level0 > .level-top:hover, .navigation .level0 > .level-top.ui-state-focus</item>
+                <item name="design/navigation/nav_submenu"
+                      xsi:type="string">.navigation .level0 .submenu a</item>
+                <item name="design/navigation/nav_submenu_hover"
+                      xsi:type="string">.navigation .level0 .submenu a:hover, .navigation .level0 .submenu a.ui-state-focus</item>
+                <item name="design/navigation/nav_active"
+                      xsi:type="string">.navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top</item>
+                <item name="design/navigation/nav_submenu_active"
+                      xsi:type="string">.navigation .level0 .submenu .active > a</item>
+                
+                <item name="design/buttons/primary"
+                      xsi:type="string">.action.primary</item>
+                <item name="design/buttons/primary_hover"
+                      xsi:type="string">.action.primary:hover</item>
+                <item name="design/buttons/button"
+                      xsi:type="string">button, .cart.table-wrapper .actions-toolbar > .action, .action-gift</item>
+                <item name="design/buttons/button_hover"
+                      xsi:type="string">button:hover, .cart.table-wrapper .actions-toolbar > .action:hover, .action-gift:hover</item>
+                
+                <item name="design/fonts/product_view_product_name"
+                      xsi:type="string">.catalog-product-view h1</item>
+                <item name="design/fonts/product_view_product_price"
+                      xsi:type="string">.catalog-product-view .product-info-main .price-box .price-wrapper .price, .product-options-bottom .price-box .price-wrapper .price</item>
+                
+                <item name="design/category_page/title"
+                      xsi:type="string">.catalog-category-view .page-main > .page-title-wrapper .page-title</item>
+                <item name="design/category_page/product_name"
+                      xsi:type="string">.catalog-category-view .product-item-name > a, .product.name a > a</item>
+                <item name="design/category_page/product_price"
+                      xsi:type="string">.catalog-category-view .product-item .price-box .price</item>
+                      
+                <item name="design/product_page/product_name"
+                      xsi:type="string">.catalog-product-view h1</item>
+                <item name="design/product_page/product_price"
+                      xsi:type="string">.catalog-product-view .product-info-main .price-box .price-wrapper .price, .product-options-bottom .price-box .price-wrapper .price</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Theme\Model\Design\Config\MetadataProvider">
+        <arguments>
+            <argument name="metadata"
+                      xsi:type="array">
+                <item name="fonts_body_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/body_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_body_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/body_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_body_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/body_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+
+                <item name="fonts_h1_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h1_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_h1_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h1_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_h1_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h1_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+
+                <item name="fonts_h2_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h2_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_h2_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h2_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_h2_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h2_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+
+                <item name="fonts_h3_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h3_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_h3_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h3_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_h3_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/h3_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+
+                <item name="navigation_nav_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+
+                <item name="navigation_nav_hover_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_hover_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_hover_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_hover_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_hover_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_hover_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+
+                <item name="navigation_nav_submenu_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_submenu_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_submenu_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+
+                <item name="navigation_nav_submenu_hover_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_hover_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_submenu_hover_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_hover_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_submenu_hover_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_hover_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+
+                <item name="navigation_nav_active_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_active_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_active_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_active_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_active_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_active_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+
+                <item name="navigation_nav_submenu_active_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_active_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_submenu_active_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_active_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+                <item name="navigation_nav_submenu_active_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/navigation/nav_submenu_active_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/navigation
+                    </item>
+                </item>
+
+                <item name="fonts_link_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/link_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_link_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/link_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_link_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/link_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+
+                <item name="fonts_link_hover_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/link_hover_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_link_hover_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/link_hover_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+                <item name="fonts_link_hover_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/fonts/link_hover_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/fonts
+                    </item>
+                </item>
+
+                <item name="buttons_primary_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/primary_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_primary_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/primary_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_primary_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/primary_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+
+                <item name="buttons_primary_hover_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/primary_hover_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_primary_hover_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/primary_hover_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_primary_hover_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/primary_hover_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+
+                <item name="buttons_button_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/button_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_button_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/button_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_button_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/button_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+
+                <item name="buttons_button_hover_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/button_hover_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_button_hover_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/button_hover_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                <item name="buttons_button_hover_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/buttons/button_hover_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/buttons
+                    </item>
+                </item>
+                
+                <item name="category_page_title_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/title_family_variant</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                <item name="category_page_title_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/title_family</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                <item name="category_page_title_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/title_color</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                
+                <item name="category_page_product_name_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/product_name_family_variant</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                <item name="category_page_product_name_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/product_name_family</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                <item name="category_page_product_name_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/product_name_color</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                
+                <item name="category_page_product_price_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/product_price_family_variant</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                <item name="category_page_product_price_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/product_price_family</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                <item name="category_page_product_price_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/category_page/product_price_color</item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/category_page</item>
+                </item>
+                
+                <item name="product_page_product_name_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/product_page/product_name_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/product_page
+                    </item>
+                </item>
+                <item name="product_page_product_name_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/product_page/product_name_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/product_page
+                    </item>
+                </item>
+                <item name="product_page_product_name_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/product_page/product_name_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/product_page
+                    </item>
+                </item>
+
+                <item name="product_page_product_price_family_variant"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/product_page/product_price_family_variant
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/product_page
+                    </item>
+                </item>
+                <item name="product_page_product_price_family"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/product_page/product_price_family
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/product_page
+                    </item>
+                </item>
+                <item name="product_page_product_price_color"
+                      xsi:type="array">
+                    <item name="path"
+                          xsi:type="string">design/product_page/product_price_color
+                    </item>
+                    <item name="fieldset"
+                          xsi:type="string">lvk_settings/product_page
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

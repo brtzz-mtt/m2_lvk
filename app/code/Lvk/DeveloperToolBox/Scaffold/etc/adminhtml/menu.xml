@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Lvk_Scaffold::menu_configuration_scaffold"
+             resource="Lvk_Scaffold::menu_configuration_scaffold"
+             title="Scaffold Module"
+             parent="Lvk_Base::menu_configuration"
+             sortOrder="711"
+             module="Lvk_Scaffold"
+             action="adminhtml/system_config/edit/section/lvk_scaffold" />
+        <add id="Lvk_Scaffold::menu_documentation_scaffold"
+             resource="Lvk_Scaffold::menu_documentation_scaffold"
+             title="Scaffold Module" 
+             parent="Lvk_Base::menu_documentation"
+             sortOrder="811"
+             module="Lvk_Scaffold"
+             action="lvk_base/documentation/index/module/Scaffold" />
+    </menu>
+</config>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="lvk_developertoolbox"
+                 translate="label"
+                 type="text"
+                 sortOrder="111"
+                 showInDefault="1"
+                 showInWebsite="1"
+                 showInStore="1">
+            <label>DeveloperToolBox</label>
+            <tab>lvk</tab>
+            <resource>Lvk_DeveloperToolBox::config</resource>
+            <group id="components"
+                   translate="label"
+                   type="text"
+                   sortOrder="000"
+                   showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Components</label>
+                <field id="index_scope"
+                       translate="label"
+                       type="select"
+                       sortOrder="000"
+                       showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Index scope</label>
+                    <source_model>Lvk\DeveloperToolBox\Model\Config\Source\ScopeOptions</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
